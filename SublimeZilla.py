@@ -55,7 +55,7 @@ class SublimeZillaCommand(sublime_plugin.WindowCommand):
 
 		# Open a new buffer and name it
 		config_view = self.window.new_file()
-		config_view.set_name("sftp-config.json")
+		config_view.set_name(self.server["name"] + "sftp-config.json")
 		config_view.set_syntax_file("Packages/JavaScript/JSON.tmLanguage")
 
 		# Check for SFTP config file
